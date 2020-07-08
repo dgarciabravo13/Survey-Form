@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../client/stylesheets/style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">
+          Formulario de Encuesta
+        </h1>
+          <p id="description" class="description text-center">Gracias por rellenar nuestra encuesta, solo le llevará unos minutos.</p>
+        </header>
+        <form id="survey-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Nombre</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Introduce tu nombre"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Introduce tu Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Edad <span class="clue">(opcional)</span></label
+            >
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Edad"
+            />
+          </div>
+          <div class="form-group">
+            <p>Que opción te describe mejor como cuidador de perros?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Selecciona la mejor opción:</option>
+              <option value="beginner">Principiante</option>
+              <option value="normal">Normal</option>
+              <option value="expert">Experto</option>
+              <option value="preferNo">Prefiero no decirlo</option>
+              <option value="other">Otras</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Recomendarías a un amigo tener un Shiba Inu?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Si, son lo mejor.</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />No estoy seguro.</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="never"
+                type="radio"
+                class="input-radio"
+              />No, nunca. Son un demonío.</label
+            >
+          </div>
+          <div class="form-group">
+            <p>
+              Cual es la parte del Shiba Inu que más te gusta?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Selecciona una parte:</option>
+              <option value="tail">La cola</option>
+              <option value="hair">El pelo</option>
+              <option value="ears">Las orejas</option>
+              <option value="eyes">Los ojos</option>
+              <option value="other">Otras partes</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>
+              Que adjetivos crees que describen mejor su caracter?
+              <span class="clue">(Chequea todos los que creas)</span>
+            </p>
+            <label
+              ><input
+                name="prefer"
+                value="dignity"
+                type="checkbox"
+                class="input-checkbox"
+              />Dignidad</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="fearful"
+                type="checkbox"
+                class="input-checkbox"
+              />Miedoso</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="affectionate"
+                type="checkbox"
+                class="input-checkbox"
+              />Cariñoso</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="brave"
+                type="checkbox"
+                class="input-checkbox"
+              />Valiente</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="distrustful"
+                type="checkbox"
+                class="input-checkbox"
+              />Desconfiado</label
+            >
+          </div>
+          <div class="form-group">
+            <p>Algún comentario o sugerencia?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Escribe tus comentarios aqui..."
+            ></textarea>
+          </div>
+             <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Enviar
+            </button>
+          </div>
+        </form>
+    </div>
+  </body>
+</html>
