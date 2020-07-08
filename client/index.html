@@ -52,6 +52,46 @@
               placeholder="Edad"
             />
           </div>
+          <div class="form-group">
+            <p>Que opción te describe mejor como cuidador de perros?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Selecciona la mejor opción:</option>
+              <option value="beginner">Principiante</option>
+              <option value="normal">Normal</option>
+              <option value="expert">Experto</option>
+              <option value="preferNo">Prefiero no decirlo</option>
+              <option value="other">Otras</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <p>Recomendarías a un amigo tener un Shiba Inu?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="definitely"
+                type="radio"
+                class="input-radio"
+                checked
+              />Si, son lo mejor.</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="maybe"
+                type="radio"
+                class="input-radio"
+              />No estoy seguro.</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="never"
+                type="radio"
+                class="input-radio"
+              />No, nunca. Son un demonío.</label
+            >
+          </div>
         </form>
     </div>
   </body>
